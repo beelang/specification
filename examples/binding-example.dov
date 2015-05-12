@@ -1,0 +1,18 @@
+Person: Object clone()
+  judgement: method()
+    if(condition: target predator?(), truth: stomach empty!(), else: dawwww())
+
+lily: Tiger clone()
+john: Person clone()
+
+john judgement(target: lily) # => calles stomach.empty!
+john judgement() # => Person has no trait 'target'
+
+Person 
+  target: NullObject
+
+james: Person clone()
+james judgement() # => NullObject has no trait 'target'
+
+john judgement(target: lily) # => stomach.empty!
+john judgement() # => Person has no trait 'target'
